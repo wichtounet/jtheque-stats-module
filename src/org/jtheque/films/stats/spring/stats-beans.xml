@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jtheque="http://www.jtheque.com/schema/jtheque"
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/beans 
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.jtheque.com/schema/jtheque
+            http://www.jtheque.com/schema/jtheque/jtheque.xsd"
+       default-lazy-init="true">
+
+    <bean id="statsModule" class="org.jtheque.films.stats.StatsModule" lazy-init="false"/>
+
+    <bean id="statsController" class="org.jtheque.films.stats.controller.impl.StatsController"/>
+
+    <bean id="statsService" class="org.jtheque.films.stats.services.impl.StatsService">
+        <property name="stats" ref="statsCalculator"/>
+    </bean>
+
+    <bean id="statsCalculator" class="org.jtheque.films.stats.services.impl.utils.StatsCalculator"/>
+
+    <jtheque:proxy id="statsView" type="org.jtheque.films.stats.view.impl.StatsView" swing="true"/>
+
+    <bean id="_statsView" class="org.jtheque.films.stats.view.impl.StatsView">
+        <constructor-arg ref="_mainView"/>
+        <constructor-arg>
+            <bean class="org.jtheque.films.stats.view.impl.panels.JPanelStatsFilms"/>
+        </constructor-arg>
+        <constructor-arg>
+            <bean class="org.jtheque.films.stats.view.impl.panels.JPanelStatsActors"/>
+        </constructor-arg>
+        <constructor-arg>
+            <bean class="org.jtheque.films.stats.view.impl.panels.JPanelStatsRealizers"/>
+        </constructor-arg>
+    </bean>
+
+    <jtheque:display id="displayStatsAction" key="stats.view.title" view="statsView"/>
+
+</beans>

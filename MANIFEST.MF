@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Module-Context: org/jtheque/films/stats/spring/stats-beans.xml
+Resources: jcommon-1.0.8.jar;jfreechart-1.0.9.jar;
