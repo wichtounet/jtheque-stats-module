@@ -30,14 +30,14 @@ import org.jtheque.core.managers.module.annotations.UnPlug;
  *
  * @author Baptiste Wicht
  */
-@Module(id = "jtheque-stats-module", i18n = "classpath:org/jtheque/films/stats/ressources/i18n/stats", version = "1.4.2", core = "2.0.2",
-        jarFile = "jtheque-stats-module-1.4.2.jar", dependencies = "jtheque-films-module",
+@Module(id = "jtheque-stats-module", i18n = "classpath:org/jtheque/films/stats/i18n/stats", version = "1.4.2",
+        core = "2.0.2", jarFile = "jtheque-stats-module-1.4.2.jar", dependencies = "jtheque-films-module",
         updateURL = "http://jtheque.developpez.com/public/versions/StatsModule.versions")
 public final class StatsModule {
     /**
      * The base name for the images.
      */
-    public static final String IMAGE_BASE_NAME = "org/jtheque/films/stats/ressources/images";
+    public static final String IMAGE_BASE_NAME = "org/jtheque/films/stats/images";
 
     /**
      * The feature for displaying the stats.
