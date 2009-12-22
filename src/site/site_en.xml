@@ -18,7 +18,9 @@
             <item name="JTheque Stats Module" href="http://jtheque.developpez.com/collections/tools/"/>
         </breadcrumbs>
 
-        <menu ref="parent"/>
+        <menu name="Parent">
+            <item name="JTheque Collections" href="http://jtheque.developpez.com/collections/en/"/>
+        </menu>
 
         <menu name="JTheque Stats Module">
             <item name="Overview" href="index.html"/>
