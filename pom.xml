@@ -66,20 +66,7 @@
 
         <outputDirectory>${env.BUILD_HOME}/modules/jtheque-stats-module/classes/production</outputDirectory>
         <testOutputDirectory>${env.BUILD_HOME}/modules/jtheque-stats-module/classes/test</testOutputDirectory>
-
-        <sourceDirectory>src</sourceDirectory>
-        <testSourceDirectory>test/java</testSourceDirectory>
-
-        <resources>
-            <resource>
-                <directory>src</directory>
-                <excludes>
-                    <exclude>**/*.java</exclude>
-                    <exclude>**/package.html</exclude>
-                </excludes>
-            </resource>
-        </resources>
-
+        
         <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>

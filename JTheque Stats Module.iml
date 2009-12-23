@@ -4,7 +4,7 @@
     <facet type="Spring" name="Spring">
       <configuration>
         <fileset id="fileset1" name="My Fileset" removed="false">
-          <file>file://$MODULE_DIR$/src/main/java/org/jtheque/films/stats/spring/stats-beans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/jtheque/films/stats/spring/stats-beans.xml</file>
           <file>file://$MODULE_DIR$/../JTheque Films Module/src/org/jtheque/films/spring/films-actions.xml</file>
           <file>file://$MODULE_DIR$/../JTheque Films Module/src/org/jtheque/films/spring/films-beans.xml</file>
           <file>file://$MODULE_DIR$/../JTheque Films Module/src/org/jtheque/films/spring/films-views.xml</file>
@@ -36,20 +36,23 @@
     <output url="file://M:/Server/Builds/modules/jtheque-stats-module/classes/production" />
     <output-test url="file://M:/Server/Builds/modules/jtheque-stats-module/classes/test" />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="library" exported="" name="Maven: org.jtheque:jtheque-films-module:1.4.2" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.jtheque:jtheque-primary-utils:1.3.1" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.jtheque:jtheque-utils:1.1.2" level="project" />
+    <orderEntry type="module" module-name="JTheque Films Module" exported="" />
+    <orderEntry type="module" module-name="JTheque Primary Utils" exported="" />
     <orderEntry type="library" exported="" name="Maven: org.jtheque:jtheque-core:2.0.2" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.dbunit:dbunit:2.4.4" level="project" />
     <orderEntry type="library" exported="" name="Maven: junit:junit:4.4" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.slf4j:slf4j-api:1.5.8" level="project" />
     <orderEntry type="library" exported="" name="Maven: commons-collections:commons-collections:3.2.1" level="project" />
-    <orderEntry type="library" exported="" name="Maven: org.jtheque:jtheque-utils:1.1.2" level="project" />
+    <orderEntry type="module" module-name="JTheque Utils" exported="" />
     <orderEntry type="library" exported="" name="Maven: org.slf4j:jcl-over-slf4j:1.5.8" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.substance:substance:6.0" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.trident:trident:1.2" level="project" />
