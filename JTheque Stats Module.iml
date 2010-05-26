@@ -13,7 +13,7 @@
           <file>file://$MODULE_DIR$/../JTheque Core/src/main/resources/org/jtheque/core/spring/core-managers.xml</file>
           <file>file://$MODULE_DIR$/../JTheque Core/src/main/resources/org/jtheque/core/spring/core-resources.xml</file>
           <file>file://$MODULE_DIR$/../JTheque Core/src/main/resources/org/jtheque/core/spring/core-views.xml</file>
-          <file>file://$MODULE_DIR$/../JTheque Primary Utils/src/main/resources/org/jtheque/primary/spring/primary-beans.xml</file>
+          <file>file://$MODULE_DIR$/../JTheque Primary Utils/src/main/resources/META-INF/spring/jtheque-primary.xml</file>
         </fileset>
         <fileset id="fileset2" name="JTheque Films File Set" removed="false">
           <file>file://$MODULE_DIR$/../JTheque Films Module/src/main/resources/org/jtheque/films/spring/films-views.xml</file>
@@ -25,7 +25,7 @@
           <file>file://$MODULE_DIR$/../JTheque Core/src/main/resources/org/jtheque/core/spring/core-views.xml</file>
           <file>file://$MODULE_DIR$/../JTheque Films Module/src/main/resources/org/jtheque/films/spring/films-actions.xml</file>
           <file>file://$MODULE_DIR$/../JTheque Films Module/src/main/resources/org/jtheque/films/spring/films-beans.xml</file>
-          <file>file://$MODULE_DIR$/../JTheque Primary Utils/src/main/resources/org/jtheque/primary/spring/primary-beans.xml</file>
+          <file>file://$MODULE_DIR$/../JTheque Primary Utils/src/main/resources/META-INF/spring/jtheque-primary.xml</file>
           <file>file://$MODULE_DIR$/../JTheque Primary Utils/src/main/resources/org/jtheque/primary/spring/primary-test-beans.xml</file>
           <file>file://$MODULE_DIR$/../JTheque Films Module/src/main/resources/org/jtheque/films/spring/films-views.xml</file>
         </fileset>
@@ -33,20 +33,17 @@
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
-    <output url="file://C:/Server/builds/modules/jtheque-stats-module/classes/production" />
-    <output-test url="file://C:/Server/builds/modules/jtheque-stats-module/classes/test" />
+    <output url="file:///home/wichtounet/Builds/modules/jtheque-stats-module/classes/production" />
+    <output-test url="file:///home/wichtounet/Builds/modules/jtheque-stats-module/classes/test" />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/${env.BUILD_HOME}/modules/jtheque-stats-module" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="inheritedJdk" />
-    <orderEntry type="library" exported="" name="Maven: org.jtheque:jtheque-utils:1.1.2" level="project" />
-    <orderEntry type="library" exported="" name="Maven: org.jtheque:jtheque-films-module:1.4.2" level="project" />
-    <orderEntry type="library" exported="" name="Maven: org.jtheque:jtheque-primary-utils:1.3.1" level="project" />
-    <orderEntry type="library" exported="" name="Maven: org.jtheque:jtheque-core:2.0.2" level="project" />
-    <orderEntry type="library" exported="" name="Maven: commons-net:commons-net:2.0" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.jtheque:org.jtheque.films-module:1.4.2" level="project" />
   </component>
   <component name="org.twodividedbyzero.idea.findbugs">
     <option name="_basePreferences">
