@@ -16,7 +16,6 @@ package org.jtheque.films.stats.view.impl;
  * along with JTheque.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import org.jdesktop.swingx.JXHeader;
 import org.jtheque.core.managers.Managers;
 import org.jtheque.core.managers.error.JThequeError;
 import org.jtheque.core.managers.language.ILanguageManager;
@@ -25,9 +24,14 @@ import org.jtheque.core.managers.view.able.IViewManager;
 import org.jtheque.core.managers.view.impl.frame.abstraction.SwingDialogView;
 import org.jtheque.films.stats.view.able.IStatsView;
 import org.jtheque.films.stats.view.impl.panels.PanelStats;
+
+import org.jdesktop.swingx.JXHeader;
 import org.springframework.stereotype.Component;
 
-import javax.swing.*;
+import javax.swing.JComponent;
+import javax.swing.JScrollPane;
+import javax.swing.JTabbedPane;
+
 import java.awt.Container;
 import java.awt.Frame;
 import java.util.Collection;
@@ -98,7 +102,7 @@ public final class StatsView extends SwingDialogView implements IStatsView {
         addTab(components, panelFilms, "stats.view.tab.films");
         addTab(components, panelActors, "stats.view.tab.actors");
         addTab(components, panelRealizers, "stats.view.tab.realizers");
-        
+
         Managers.getManager(ILanguageManager.class).addInternationalizable(new TabTitleUpdater(tab, components));
 
         return tab;

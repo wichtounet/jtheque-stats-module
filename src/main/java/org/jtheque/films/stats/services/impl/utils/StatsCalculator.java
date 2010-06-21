@@ -16,7 +16,6 @@ package org.jtheque.films.stats.services.impl.utils;
  * along with JTheque.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import org.jfree.data.general.DefaultPieDataset;
 import org.jtheque.films.persistence.od.able.Film;
 import org.jtheque.films.services.able.IActorService;
 import org.jtheque.films.services.able.IFilmsService;
@@ -26,7 +25,10 @@ import org.jtheque.primary.od.able.Person;
 import org.jtheque.utils.count.Counter;
 import org.jtheque.utils.count.Counters;
 
+import org.jfree.data.general.DefaultPieDataset;
+
 import javax.annotation.Resource;
+
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;

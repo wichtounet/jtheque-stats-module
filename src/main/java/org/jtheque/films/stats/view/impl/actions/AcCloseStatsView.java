@@ -23,7 +23,6 @@ import org.jtheque.core.managers.resource.ImageType;
 import org.jtheque.core.managers.view.impl.actions.JThequeAction;
 import org.jtheque.films.stats.controller.able.IStatsController;
 
-import javax.annotation.Resource;
 import java.awt.event.ActionEvent;
 
 /**

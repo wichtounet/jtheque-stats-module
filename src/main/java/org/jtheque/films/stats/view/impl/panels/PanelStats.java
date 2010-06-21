@@ -1,11 +1,5 @@
 package org.jtheque.films.stats.view.impl.panels;
 
-import org.jdesktop.swingx.JXHeader;
-import org.jfree.chart.ChartFactory;
-import org.jfree.chart.ChartPanel;
-import org.jfree.chart.JFreeChart;
-import org.jfree.data.general.PieDataset;
-import org.jfree.ui.RectangleAnchor;
 import org.jtheque.core.managers.Managers;
 import org.jtheque.core.managers.beans.IBeansManager;
 import org.jtheque.core.managers.language.ILanguageManager;
@@ -15,7 +9,15 @@ import org.jtheque.core.managers.resource.ImageType;
 import org.jtheque.films.stats.StatsModule;
 import org.jtheque.films.stats.services.able.IStatsService;
 
+import org.jdesktop.swingx.JXHeader;
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartPanel;
+import org.jfree.chart.JFreeChart;
+import org.jfree.data.general.PieDataset;
+import org.jfree.ui.RectangleAnchor;
+
 import javax.swing.JPanel;
+
 import java.awt.Color;
 import java.awt.Component;
 
@@ -90,6 +92,7 @@ public abstract class PanelStats extends JPanel implements Internationalizable {
      *
      * @param key     The i18 key of the title of the pie chart.
      * @param dataset The dataset used to populate the pie chart.
+     *
      * @return The component containing the pie chart.
      */
     final Component createPieChartPanel(String key, PieDataset dataset) {

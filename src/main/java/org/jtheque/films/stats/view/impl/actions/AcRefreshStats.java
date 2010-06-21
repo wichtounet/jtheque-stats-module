@@ -27,7 +27,6 @@ import org.jtheque.films.stats.services.able.IStatsService;
 import org.jtheque.films.stats.view.able.IStatsView;
 import org.jtheque.films.utils.Constants;
 
-import javax.annotation.Resource;
 import java.awt.event.ActionEvent;
 
 /**

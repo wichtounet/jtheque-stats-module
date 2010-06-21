@@ -16,8 +16,9 @@ package org.jtheque.films.stats.view.able;
  * along with JTheque.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import org.jdesktop.swingx.JXHeader;
 import org.jtheque.core.managers.view.able.IWindowView;
+
+import org.jdesktop.swingx.JXHeader;
 
 import javax.swing.JTabbedPane;
 

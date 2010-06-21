@@ -1,9 +1,10 @@
 package org.jtheque.films.stats.view.impl.panels;
 
-import org.jfree.chart.JFreeChart;
 import org.jtheque.core.managers.Managers;
 import org.jtheque.core.managers.language.ILanguageManager;
 import org.jtheque.core.managers.language.Internationalizable;
+
+import org.jfree.chart.JFreeChart;
 
 /*
  * This file is part of JTheque.

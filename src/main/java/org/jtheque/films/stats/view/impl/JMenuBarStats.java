@@ -25,6 +25,7 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.KeyStroke;
+
 import java.awt.event.KeyEvent;
 
 /**
@@ -38,7 +39,7 @@ public final class JMenuBarStats extends JMenuBar {
     /**
      * Construct a new JMenuBarStats for the specified actions.
      */
-    public JMenuBarStats(){
+    public JMenuBarStats() {
         super();
 
         JMenu menu = new JThequeMenu("menu.stats");

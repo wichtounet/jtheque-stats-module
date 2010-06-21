@@ -19,6 +19,7 @@ package org.jtheque.films.stats.tests;
 import org.jtheque.films.stats.services.impl.utils.CounterUtils;
 import org.jtheque.utils.count.Counter;
 import org.jtheque.utils.count.Counters;
+
 import org.junit.Test;
 
 import java.util.ArrayList;
